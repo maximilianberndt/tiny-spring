@@ -29,6 +29,6 @@ Create with custom paramters
 const spring = createSpring(0, {
 	stiffness: 0.2, 
 	damping: 1, 
-	mass = 2, 
+	mass: 2, 
 })
 ```
