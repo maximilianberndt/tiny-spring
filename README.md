@@ -1,8 +1,9 @@
 # tiny-spring
 
-Tiny spring implementation in 27 lines of javascript
+Tiny spring implementation in 25 lines of javascript
 
-Basic Usage
+## Basic Usage
+
 ```
 // Create spring with default parameters
 const spring = createSpring(0)
@@ -24,7 +25,8 @@ window.addEventListner("mousemove", (e) => {
 })
 ```
 
-Create with custom paramters
+## Custom paramters
+
 ```
 const spring = createSpring(0, {
 	stiffness: 0.2, 
