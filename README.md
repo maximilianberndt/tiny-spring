@@ -8,20 +8,20 @@ Tiny spring implementation in 25 lines of javascript
 // Create spring with default parameters
 const spring = createSpring(0)
 
-const tick = () =>{
-	// Update spring every tick
-	spring.update()
+const tick = () => {
+ // Update spring every tick
+ spring.update()
 
-	// Get value
-	console.log(spring.get())
+ // Get value
+ console.log(spring.get())
 
-	window.requestAnimationFrame(tick)	
+ window.requestAnimationFrame(tick)	
 }
 tick()
 
-// Set target value
 window.addEventListner("mousemove", (e) => {
-	spring.set(e.clientX)
+ // Set target value
+ spring.set(e.clientX)
 })
 ```
 
@@ -29,8 +29,8 @@ window.addEventListner("mousemove", (e) => {
 
 ```
 const spring = createSpring(0, {
-	stiffness: 0.2, 
-	damping: 1, 
-	mass: 2, 
+ stiffness: 0.2, 
+ damping: 1, 
+ mass: 2, 
 })
 ```
