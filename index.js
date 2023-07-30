@@ -17,6 +17,7 @@ const createSpring = (
 
   return {
     update,
+    config: { stiffness, damping, mass }, 
     get: () => current,
     set: (newTarget) => {
       target = newTarget;
