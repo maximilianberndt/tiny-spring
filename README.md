@@ -2,6 +2,11 @@
 
 Tiny spring implementation in 25 lines of javascript
 
+## TODO
+- automatically update with raf
+- use objects as paramter to enable using Three Vectors
+- return config
+
 ## Basic Usage
 
 ```
