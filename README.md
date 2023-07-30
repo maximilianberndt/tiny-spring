@@ -4,8 +4,8 @@ Tiny spring implementation in 25 lines of javascript
 
 ## TODO
 - automatically update with raf
+  - Check if current is not at target yet and skip interpolation
 - use objects as paramter to enable using Three Vectors
-- return config
 
 ## Basic Usage
 
