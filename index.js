@@ -2,9 +2,8 @@ const createSpring = (
   start,
   { stiffness = 0.1, damping = 0.8, mass = 1 } = {}
 ) => {
-  let current = start;
-  let previous = start;
-  let target = start;
+  const config = { stiffness, damping, mass };
+  let current = previous = target = start;
 
   const update = () => {
     const velocity = current - previous;
@@ -17,7 +16,7 @@ const createSpring = (
 
   return {
     update,
-    config: { stiffness, damping, mass }, 
+    config, 
     get: () => current,
     set: (newTarget) => {
       target = newTarget;
